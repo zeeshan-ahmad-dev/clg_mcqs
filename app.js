@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 async function loadQuestions() {
     let index = 0;
-    let URL = `http://127.0.0.1:5500/questions.json`;
+    let URL = `questions.json`;
     let response = await fetch(URL);
     const data = await response.json();
     let questionsList = [];
