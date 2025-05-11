@@ -127,7 +127,6 @@ async function loadQuestions() {
     // const data = await response.json();
     // const data = 
     let questionsList = [];
-    const length = data.length;
     for (let i = 0; i <= 10; i++) {
         questionsList.push(data[Math.floor(Math.random() * data.length)]);
     }
@@ -144,7 +143,7 @@ async function loadQuestions() {
         checkBtn.style.display = 'block';
 
         index++;
-        if (index < 10) {
+        if (index <= 10) {
             showQustions(data[index]);
             scoreContainer.style.display = 'none'
         } else{
