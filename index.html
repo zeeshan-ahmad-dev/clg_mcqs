@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="wrapper">
+            <div class="top">
+                <h3>Awesome Quiz App</h3>
+            </div>
+            
+            <div class="main">
+                <div id="questions-wrap">
+
+                </div>
+                <div id="answer-wrap">
+                </div>
+            </div>
+
+            <div class="bottom">
+                <p><span id="at">1</span> of <span id="total">5</span> pages</p>
+                <!-- <button id="newGame">New Game</button> -->
+                    <button id="chkAns">Check Answer</button>
+                    <button id="nxtBtn">Next Question</button>
+            </div>
+        </div>
+
+        <div class="score_container">
+            <h3>Scores</h3>
+            <div>
+                <p class="total_score">You got <span id="score">0</span>/<span id="totalquestions">10</span></p>
+            </div>
+            <button id="newGame">New Game</button>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
