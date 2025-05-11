@@ -10,6 +10,11 @@
       "answer": "The power of memory and nature"
     },
     {
+      "question": "Who wrote the poem 'If'?",
+      "options": ["Rudyard Kipling", "W.B. Yeats", "T.S. Eliot", "Emily Dickinson"],
+      "answer": "Rudyard Kipling"
+    },
+    {
       "question": "In 'If' by Rudyard Kipling, what quality is NOT mentioned as a virtue?",
       "options": ["Patience", "Pride", "Determination", "Self-control"],
       "answer": "Pride"
@@ -18,6 +23,11 @@
       "question": "What is the tone of the poem 'If'?",
       "options": ["Cynical", "Sarcastic", "Advisory", "Angry"],
       "answer": "Advisory"
+    },
+    {
+      "question": "Who wrote the poem 'The Toys'?",
+      "options": ["Coventry Patmore", "Alfred Tennyson", "Robert Browning", "Matthew Arnold"],
+      "answer": "Coventry Patmore"
     },
     {
       "question": "What emotion is shown by the father in 'The Toys' by Coventry Patmore?",
@@ -30,6 +40,11 @@
       "answer": "Parents should reflect on their actions"
     },
     {
+      "question": "Who wrote the monologue 'All the world's a stage'?",
+      "options": ["William Shakespeare", "Christopher Marlowe", "Ben Jonson", "John Donne"],
+      "answer": "William Shakespeare"
+    },
+    {
       "question": "What does 'All the world's a stage' compare life to?",
       "options": ["A school", "A battlefield", "A stage play", "A prison"],
       "answer": "A stage play"
@@ -38,6 +53,11 @@
       "question": "How many stages of life are described in 'All the world's a stage'?",
       "options": ["Five", "Seven", "Nine", "Three"],
       "answer": "Seven"
+    },
+    {
+      "question": "Who wrote the poem 'Once Upon a Time'?",
+      "options": ["Gabriel Okara", "Wole Soyinka", "Chinua Achebe", "Langston Hughes"],
+      "answer": "Gabriel Okara"
     },
     {
       "question": "In 'Once Upon a Time', what does the speaker wish to regain?",
@@ -50,14 +70,14 @@
       "answer": "Past vs present behavior"
     },
     {
-      "question": "What is a major theme in 'Lines from The Deserted Village'?",
-      "options": ["Joy of city life", "Dangers of war", "Loss of rural life", "The rise of industry"],
-      "answer": "Loss of rural life"
-    },
-    {
       "question": "Who wrote 'Lines from The Deserted Village'?",
       "options": ["Oliver Goldsmith", "Alexander Pope", "John Milton", "Samuel Taylor Coleridge"],
       "answer": "Oliver Goldsmith"
+    },
+    {
+      "question": "What is a major theme in 'Lines from The Deserted Village'?",
+      "options": ["Joy of city life", "Dangers of war", "Loss of rural life", "The rise of industry"],
+      "answer": "Loss of rural life"
     }
   ]
   
