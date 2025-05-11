@@ -97,7 +97,7 @@ const currentQuestion = document.getElementById('at');
 let options;
 let correctScore = 0;
 let correctAnswer;
-let totalQuestion = 10;
+let totalQuestion = 15;
 let currentQue = 1;
 currentQuestion.textContent = currentQue;
 
@@ -127,11 +127,10 @@ async function loadQuestions() {
     // const data = await response.json();
     // const data = 
     let questionsList = [];
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= totalQuestion; i++) {
         questionsList.push(data[Math.floor(Math.random() * data.length)]);
     }
     
-    console.log(questionsList)
     showQustions(questionsList[index]);
 
     total.innerHTML = totalQuestion;
@@ -143,13 +142,13 @@ async function loadQuestions() {
         checkBtn.style.display = 'block';
 
         index++;
-        if (index <= 10) {
+        if (index <= totalQuestion) {
             showQustions(data[index]);
             scoreContainer.style.display = 'none'
         } else{
             scoreContainer.style.display = 'block'
         }
-        if (index < 11) {
+        if (index < 16) {
             currentQue = index; 
             currentQuestion.innerHTML = currentQue;
         }
@@ -203,9 +202,6 @@ function selectOption() {
     answer_wrap.querySelectorAll('div').forEach((option) => {
         option.addEventListener("click", () => {
             if (answer_wrap.querySelector('.selected')) {
-                
-                
-
                 const activeOption = answer_wrap.querySelector('.selected');
                 activeOption.classList.remove('selected');
                 activeOption.classList.add('choices');
