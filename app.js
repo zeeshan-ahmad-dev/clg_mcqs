@@ -1,3 +1,86 @@
+const data = [
+    {
+        "question": "Who wrote the poem 'The Solitary Reaper'?",
+        "options": ["William Wordsworth", "Robert Frost", "John Keats", "P.B. Shelley"],
+        "answer": "William Wordsworth"
+    },
+    {
+        "question": "What is the central theme of 'The Solitary Reaper'?",
+        "options": ["The pain of war", "The power of memory and nature", "Love and loss", "City life"],
+        "answer": "The power of memory and nature"
+    },
+    {
+        "question": "Who wrote the poem 'If'?",
+        "options": ["Rudyard Kipling", "W.B. Yeats", "T.S. Eliot", "Emily Dickinson"],
+        "answer": "Rudyard Kipling"
+    },
+    {
+        "question": "In 'If' by Rudyard Kipling, what quality is NOT mentioned as a virtue?",
+        "options": ["Patience", "Pride", "Determination", "Self-control"],
+        "answer": "Pride"
+    },
+    {
+        "question": "What is the tone of the poem 'If'?",
+        "options": ["Cynical", "Sarcastic", "Advisory", "Angry"],
+        "answer": "Advisory"
+    },
+    {
+        "question": "Who wrote the poem 'The Toys'?",
+        "options": ["Coventry Patmore", "Alfred Tennyson", "Robert Browning", "Matthew Arnold"],
+        "answer": "Coventry Patmore"
+    },
+    {
+        "question": "What emotion is shown by the father in 'The Toys' by Coventry Patmore?",
+        "options": ["Jealousy", "Anger", "Regret", "Joy"],
+        "answer": "Regret"
+    },
+    {
+        "question": "What lesson does 'The Toys' teach?",
+        "options": ["Children need discipline", "Parents should reflect on their actions", "Toys are important", "Poets write about family"],
+        "answer": "Parents should reflect on their actions"
+    },
+    {
+        "question": "Who wrote the monologue 'All the world's a stage'?",
+        "options": ["William Shakespeare", "Christopher Marlowe", "Ben Jonson", "John Donne"],
+        "answer": "William Shakespeare"
+    },
+    {
+        "question": "What does 'All the world's a stage' compare life to?",
+        "options": ["A school", "A battlefield", "A stage play", "A prison"],
+        "answer": "A stage play"
+    },
+    {
+        "question": "How many stages of life are described in 'All the world's a stage'?",
+        "options": ["Five", "Seven", "Nine", "Three"],
+        "answer": "Seven"
+    },
+    {
+        "question": "Who wrote the poem 'Once Upon a Time'?",
+        "options": ["Gabriel Okara", "Wole Soyinka", "Chinua Achebe", "Langston Hughes"],
+        "answer": "Gabriel Okara"
+    },
+    {
+        "question": "In 'Once Upon a Time', what does the speaker wish to regain?",
+        "options": ["His youth", "His father's love", "Genuine emotions", "Lost time"],
+        "answer": "Genuine emotions"
+    },
+    {
+        "question": "What contrast is shown in 'Once Upon a Time'?",
+        "options": ["Rural vs urban", "Past vs present behavior", "Men vs women", "Old vs new poetry"],
+        "answer": "Past vs present behavior"
+    },
+    {
+        "question": "Who wrote 'Lines from The Deserted Village'?",
+        "options": ["Oliver Goldsmith", "Alexander Pope", "John Milton", "Samuel Taylor Coleridge"],
+        "answer": "Oliver Goldsmith"
+    },
+    {
+        "question": "What is a major theme in 'Lines from The Deserted Village'?",
+        "options": ["Joy of city life", "Dangers of war", "Loss of rural life", "The rise of industry"],
+        "answer": "Loss of rural life"
+    }
+]
+
 const question_wrap = document.querySelector("#questions-wrap");
 const answer_wrap = document.querySelector("#answer-wrap");
 const scoreContainer = document.querySelector(".score_container");
@@ -17,7 +100,6 @@ let correctAnswer;
 let totalQuestion = 10;
 let currentQue = 1;
 currentQuestion.textContent = currentQue;
-
 
 //Event Listeners
 function eventlisteners(){
@@ -40,9 +122,10 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 async function loadQuestions() {
     let index = 0;
-    let URL = `questions.json`;
-    let response = await fetch(URL);
-    const data = await response.json();
+    // let URL = `questions.json`;
+    // let response = await fetch(URL);
+    // const data = await response.json();
+    // const data = 
     let questionsList = [];
     const length = data.length;
     for (let i = 0; i <= 10; i++) {
